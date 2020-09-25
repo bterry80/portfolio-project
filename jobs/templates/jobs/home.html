@@ -63,16 +63,29 @@
 </header>
 
 <main role="main">
-
+  <style>
+    .brent {
+      width: 25%;
+      height: 300px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
   <section class="jumbotron text-center">
-    <div class="container">
+
+    <div class="box">
       <h1>Hi, I'm Brent!</h1>
       <p class="lead text-muted">Hey, my name is Brent and I am learning to build django websites. :)</p>
       <p>
         <a href="mailto:brent80terry@gmail.com" class="btn btn-primary my-2">Email Me</a>
 
       </p>
-      <img src="{% static 'Head_Shot.JPG' %}" height=400 width=360/>
+
+      <img class = "brent"src="{% static 'Head_Shot.JPG' %}" height=400 width=360/>
+
     </div>
   </section>
 
